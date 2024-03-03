@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+/*=================================*/
+/*Report*/
+/*=================================*/
+.Report_Container{
+    display: flex;
+    justify-content: center;
+}
+
+.Report_Content{
+    width: 40%;
+    padding: 0 2%;
+}
+
+.Report{
+    padding: 0 10%;
+    margin-bottom: 10%;
+}
+
+.Report_Header{
+    border-bottom: solid 1px;
+}
+
+/*=================================*/
+/*Images*/
+/*=================================*/
+.Images{
+    margin: 0 auto;
+    width: 60%;
+}
+
+.Image{
+    width: 100%;
+}
