@@ -1,7 +1,51 @@
+#particles-js{ 
+	position:fixed;/*描画固定*/
+	z-index:-3;/*描画を一番下に*/
+	width: 100%;
+	height: 100%;
+	background-color:black;/*背景色*/
+}
+
+#wrapper{
+	position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+	z-index: -2;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+	width:100%;
+	height: 100%;
+}
+
 body{
     background-color: black;
     color: white;
 }
+
+.square_btn {
+    display: block;
+    position: relative;
+    position: fixed;
+    top: 5%;
+    right: 10%;
+    width: 30px;
+    height: 30px;
+    background: #4b4b4b; /* ボタンの背景色 */
+  }
+   
+  .square_btn::before, .square_btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3px;
+    height: 25px;
+    background: #fff; /* バツ印の色 */
+  }
+   
+  .square_btn::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+   
+  .square_btn::after {
+    transform: translate(-50%,-50%) rotate(-45deg);
+  }
 
 /*=================================*/
 /*Report*/
@@ -9,6 +53,7 @@ body{
 .Report_Container{
     display: flex;
     justify-content: center;
+    margin-top: 2%;
 }
 
 .Report_Content{
@@ -29,10 +74,15 @@ body{
 /*Images*/
 /*=================================*/
 .Images{
-    margin: 0 auto;
-    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vw;
+    background-color: #ffffff33;
 }
 
 .Image{
-    width: 100%;
+    width: 60%;
+    height: 30vw;
 }
