@@ -106,6 +106,14 @@ particlesJS("particles-js", {
     "retina_detect":true
 });
 
+
+const menu = document.getElementsByClassName('Header_Menu');
+$(".Header_Openbtn").click(function () {
+    $(this).toggleClass('active');
+    $(menu).toggleClass('active');
+});
+
+
 //iframeのモーダル
 $(".iframe-open").modaal({
     type:'iframe',
