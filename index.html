@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="top_pc.css">
+
+    <!-- ▼CSS 1 -->
+    <link href="top_phone.css" rel="stylesheet" type="text/css" media="(max-width: 599px)" >
+    <!-- ▼CSS 2 -->
+    <link href="top_pc.css" rel="stylesheet" type="text/css" media="(min-width: 600px)">
+
     <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
-    <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 
 <header>
@@ -23,6 +27,16 @@
             <a class="Header_Navigation_Content" href="./works.html">WORKS</a>
         </ul>
 
+        <div class="Header_Openbtn"><span></span><span></span></div>
+
+    </div>
+
+    <div class="Header_Menu">
+        <ul>
+            <li><a href="./top.html">HOME</a></li>
+            <li><a href="./profile.html">PROFILE</a></li>
+            <li><a href="./works.html">WORKS</a></li>
+        </ul>
     </div>
 </header>
 
@@ -37,7 +51,7 @@
     <div class="Index_KeyVisual">
 
         <div class="KeyVisual_Movie">
-            <video autoplay muted loop width=100% src="./assets/LET'SCOOK!.mp4"></video>
+            <video playsinline autoplay muted loop src="./assets/LET'SCOOK!.mp4"></video>
         </div>
 
         <div class="KeyVisual_Contents">
@@ -58,14 +72,15 @@
         <div class="Section_Body">
             <div class="AboutMe_Contents">
 
-                <div class="AboutMe_Summary">
+                <div class="AboutMe_Portrait">
                     <img class="AboutMe_Icon" src="./assets/myIllustration.png" width=100%>
                 </div>
 
-                <div class="AboutMe_Detail">
+                <div class="AboutMe_Summary">
                     <p class="AboutMe_Name">井上遥</p>
                     <p class="AboutMe_Class">HAL東京 / ゲーム４年制学科 / ゲーム制作コース</p>
-
+                </div>
+                <div class="AboutMe_Detail">
                     <p>
                         志望職種：プログラマー<br>
                         専門学校では主にDirectXやゲームエンジンを利用したゲーム制作について学んでいます。<br>
@@ -144,7 +159,7 @@
                             <img width=100% src="./assets/directx.png">
                         </div>
                         <div class="skill-bar">
-                            <p>DirectX11</p>
+                            <p>DX11</p>
                             <div class="dots">
                               <div class="dot green"></div>
                               <div class="dot green"></div>
@@ -182,7 +197,7 @@
                             <img width=100% src="./assets/ue.png">
                         </div>
                         <div class="skill-bar">
-                            <p>UnrealEngine</p>
+                            <p>UE</p>
                             <div class="dots">
                               <div class="dot green"></div>
                               <div class="dot green"></div>
@@ -217,14 +232,16 @@
 
                 <div class="MySkill_Others">
                     <h2>others</h2>
-                    <img src="./assets/html.png">
-                    <img src="./assets/css.png">
-                    <img src="./assets/js.png">
-                    <img src="./assets/maya.png">
-                    <img src="./assets/gimp.png">
-                    <img src="./assets/excel.png">
-                    <img src="./assets/powerpoint.png">
-                    <img src="./assets/word.png">
+                        <div class="Others_Icon">
+                        <img src="./assets/html.png">
+                        <img src="./assets/css.png">
+                        <img src="./assets/js.png">
+                        <img src="./assets/maya.png">
+                        <img src="./assets/gimp.png">
+                        <img src="./assets/excel.png">
+                        <img src="./assets/powerpoint.png">
+                        <img src="./assets/word.png">
+                    </div>
                 </div>
 
             </div>
@@ -288,7 +305,8 @@
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <!--幾何学模様-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> <!--ハンバーガーメニュー-->
     <script src="./top.js"></script>
 </body>
 
