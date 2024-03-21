@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work</title>
-    <link rel="stylesheet" href="work.css">
+
+    <!-- ▼CSS 1 -->
+    <link href="work_phone.css" rel="stylesheet" type="text/css" media="(max-width: 599px)" >
+    <!-- ▼CSS 2 -->
+    <link href="work_pc.css" rel="stylesheet" type="text/css" media="(min-width: 600px)">
+
     <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 </head>
 
@@ -12,55 +17,125 @@
     <!--背景　幾何学模様-->
     <div id="particles-js"></div>
     <div id="wrapper"></div>
-    
-    <div claass="Contents">
-        <div class="Images">
-            <img class="Image" src="./assets/LET'SCOOK!/title.png">
-        </div>
 
-        <div class="Report_Container">
-            <div class="Report_Content">
-                <div class="Report">
-                    <div class="Report_Header">LET'S COOK!</div>
-                    <div class="Report_Body">
-                        <p>
-                            自身の技術の向上をアウトプットするものが欲しかったので作成を開始。<br>
-                            Unityを参考にしたオブジェクト指向を行っており、動作確認の簡略化とバグの削減のためにポリモーフィズムを意識したコードに。<br>
-                            さらに、食材の状態変化にステートパターンを利用することでプログラムの変更を容易に行えるようにした。<br>
-                            ゲーム内の制限時間などのゲージとシーン遷移の際のフェードにシェーダーを使用。<br>
-                            ゲーム内で使用されているモデルやテクスチャはほとんどが自作で、Overcooked2の世界観を再現できるよう工夫した。<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="Report_Content">
-                <div class="Report">
-                    <div class="Report_Header">概要</div>
-                    <div class="Report_Body">
-                        <p>
-                            制作日：2024/02/20<br>
-                            制作期間：3カ月程<br>
-                            ジャンル：クッキングアクション<br>
-                            制作人数：1名
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="Report">
-                    <div class="Report_Header">使用言語・ツール</div>
-                    <div class="Report_Body">
-                        <p>
-                            開発環境：DirectX11 / C++<br>
-                            使用ツール：MAYA、MediBang Peint Pro
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
+    <!---------------------------------------------------------------->
+    <!--                           画像                             -->
+    <!---------------------------------------------------------------->
+    <div class="Images">
+        <img class="Image" src="./assets/LET'SCOOK!/title.png">
     </div>
+
+    <!---------------------------------------------------------------->
+    <!--                           概要                             -->
+    <!---------------------------------------------------------------->
+    <div class="Report_Summaries">
+        <div class="Summary">
+            <div class="Summary_Header">概要</div>
+            <div class="Summary_Body">
+                <p>
+                    制作日：2024/02/20<br>
+                    制作期間：3カ月程<br>
+                    ジャンル：クッキングアクション<br>
+                    制作人数：1名<br>
+                    2024年3月　進級制作展（HAL EVENT WEEK）　独創力賞受賞
+                </p>
+            </div>
+        </div>
+
+        <div class="Summary">
+            <div class="Summary_Header">使用言語・ツール</div>
+            <div class="Summary_Body">
+                <p>
+                    開発環境：DirectX11 / C++<br>
+                    使用ツール：MAYA、MediBang Peint Pro
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------->
+    <!--                           詳細                             -->
+    <!---------------------------------------------------------------->
+    <div class="Report_Detail">
+        <div class="Detail">
+
+            <div class="Detail_Header">詳細</div>
+
+            <div class="Detail_Body">
+                <p>
+                    オブジェクト指向やポリモーフィズムについて学習しなおしたいと考え制作を開始。<br>
+                    Overcookedなら学習したい内容を避けて通ることはできないと考えたためオマージュすることに決定。<br>
+                </p>
+
+                <div class="Detail_Point">
+
+                    <div class="Detail_Point_Title">
+                        <div class="Detail_Point_Title_Image"><img src="./assets/point.png"></div>
+                        <p>オブジェクト指向</p>
+                    </div>
+
+                    <div class="Detail_Point_Body">
+                        <p>
+                            Unityを参考にしてSTLのリスト構造を用いたオブジェクト指向。<br>
+                            Audio, Sprite等の頻繁に使うものはコンポーネント化してゲームオブジェクトに追加し使用。<br>
+                            ある程度理解が深まったので、次回の制作ではより疎結合なコードで制作したい。
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="Detail_Point">
+
+                    <div class="Detail_Point_Title">
+                        <div class="Detail_Point_Title_Image"><img src="./assets/point.png"></div>
+                        <p>ステートパターン</p>
+                    </div>
+
+                    <div class="Detail_Point_Body">
+                        <p>食材クラスにステートクラスを持たせ、ステートクラスの状態によって食材の見た目や処理が変わるように設計した。</p>
+                    </div>
+
+                </div>
+
+                <div class="Detail_Point">
+
+                    <div class="Detail_Point_Title">
+                        <div class="Detail_Point_Title_Image"><img src="./assets/point.png"></div>
+                        <p>シェーダー</p>
+                    </div>
+
+                    <div class="Detail_Point_Body">
+                        <p>
+                            シーン遷移の際のフェード、ゲーム内のゲージには自作のシェーダーを使用。<br>
+                            簡単によりポップな世界感を再現できた。
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="Detail_Point">
+
+                    <div class="Detail_Point_Title">
+                        <div class="Detail_Point_Title_Image"><img src="./assets/point.png"></div>
+                        <p>自作モデル・テクスチャー</p>
+                    </div>
+
+                    <div class="Detail_Point_Body">
+                        <p>
+                            ゲームで使用しているモデルとテクスチャーの９割以上は自分で制作したもの。<br>
+                            モデルはMAYA、テクスチャーはMediBang Paint Proで制作。
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+        
+        
+        
     
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./work.js"></script>
