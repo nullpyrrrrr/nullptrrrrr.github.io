@@ -154,11 +154,12 @@ a{
 /*header*/
 /*=================================*/
 header{
-    position: fixed;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.856);
-    font-weight: bold;
-    z-index: 10;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.856);
+  font-weight: bold;
+  z-index: 10;
 }
 
 .Header_Content{
@@ -195,6 +196,13 @@ header{
     margin: auto 0 auto 30px;
 }
 
+/*メニュー*/
+.Header_Menu{
+  position: absolute;
+  overflow-x: hidden;
+  height: 0;
+}
+
 /*=================================*/
 /*body*/
 /*=================================*/
@@ -208,9 +216,8 @@ body{
 /*Key Visual*/
 /*=================================*/
 .Index_KeyVisual{
-    top: 40px;
     width: calc(100% - 100px);
-    margin: 0 auto;
+    margin: 0 auto 10vh auto;
     position: relative;
 }
 
@@ -223,6 +230,7 @@ body{
 
 .KeyVisual_Movie video{
     clip-path: polygon(0 10%, 90% 10%, 100% 25%, 100% 90%, 10% 90%, 0 75%);
+    width: 100%;
 }
 
 .KeyVisual_Contents{
@@ -336,7 +344,7 @@ body{
 /*=================================*/
 /*About Me*/
 /*=================================*/
-.AboutMe_Summary{
+.AboutMe_Portrait{
     height: 400px;
     float: left;
 }
