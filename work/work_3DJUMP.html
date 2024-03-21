@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work</title>
-    <link rel="stylesheet" href="work.css">
+
+    <!-- ▼CSS 1 -->
+    <link href="work_phone.css" rel="stylesheet" type="text/css" media="(max-width: 599px)" >
+    <!-- ▼CSS 2 -->
+    <link href="work_pc.css" rel="stylesheet" type="text/css" media="(min-width: 600px)">
+
     <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 </head>
 
@@ -13,54 +18,93 @@
     <div id="particles-js"></div>
     <div id="wrapper"></div>
     
-    <div claass="Contents">
-        <div class="Images">
+    <!---------------------------------------------------------------->
+    <!--                           画像                             -->
+    <!---------------------------------------------------------------->
+    <div class="Images">
             <img class="Image" src="./assets/3DJUMP/title.png">
+    </div>
+
+    <!---------------------------------------------------------------->
+    <!--                           概要                             -->
+    <!---------------------------------------------------------------->
+    <div class="Report_Summaries">
+        <div class="Summary">
+            <div class="Summary_Header">概要</div>
+            <div class="Summary_Body">
+                <p>
+                    制作日：2023/09/01<br>
+                    制作期間：10日程<br>
+                    ジャンル：アクション<br>
+                    制作人数：1名<br>
+                    2023年10月　HAL３校合同コンテスト　技術力賞受賞
+                </p>
+            </div>
         </div>
 
-        <div class="Report_Container">
-            <div class="Report_Content">
-                <div class="Report">
-                    <div class="Report_Header">3D JUMP</div>
-                    <div class="Report_Body">
-                        <p>
-                            学内コンテストに向けて制作していたゲームが制作困難になったため急ぎ制作を開始。<br>
-                            スーパーマリオ3Dワールドを参考にして、数あるアクションの中からジャンプ、ヒップドロップ、壁ジャンプを抜粋して制作。<br>
-                            少しでもポップな世界観を再現できるよう、使用しているモデルやテクスチャはほとんどが自作。<br>
-                            急ぎの制作になってしまった分マリオの醍醐味であるアイテムによる変身など実装できなかった部分が多くあるので是非リベンジしたい。<br>
-                        </p>
-                    </div>
-                </div>
+        <div class="Summary">
+            <div class="Summary_Header">使用言語・ツール</div>
+            <div class="Summary_Body">
+                <p>
+                    開発環境：DirectX11 / C++<br>
+                    使用ツール：MAYA、MediBang Peint Pro
+                </p>
             </div>
-            
-            <div class="Report_Content">
-                <div class="Report">
-                    <div class="Report_Header">概要</div>
-                    <div class="Report_Body">
-                        <p>
-                            制作日：2023/09/01<br>
-                            制作期間：10日程<br>
-                            ジャンル：アクション<br>
-                            制作人数：1名<br>
-                            2023年10月　HAL３校合同コンテスト　技術力賞受賞
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="Report">
-                    <div class="Report_Header">使用言語・ツール</div>
-                    <div class="Report_Body">
-                        <p>
-                            開発環境：DirectX11 / C++<br>
-                            使用ツール：MAYA、MediBang Peint Pro
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
         </div>
-    
-        
+    </div>
+
+    <!---------------------------------------------------------------->
+    <!--                           詳細                             -->
+    <!---------------------------------------------------------------->
+    <div class="Report_Detail">
+        <div class="Detail">
+
+            <div class="Detail_Header">詳細</div>
+
+            <div class="Detail_Body">
+                <p>
+                    学内コンテストに向けて制作していたゲームが制作困難になったため急ぎ制作を開始。<br>
+                    とにかく時間がなかったため、少しでも制作経験のあるマリオのようなアクションゲームに決定。<br>
+                    スーパーマリオ3Dワールドを参考にして、数あるアクションの中からジャンプ、ヒップドロップ、壁ジャンプを抜粋して制作。<br>
+                    急ぎの制作になってしまった分マリオの醍醐味であるアイテムによる変身など実装できなかった部分が多くあるので是非リベンジしたい。<br>
+                </p>
+
+                <div class="Detail_Point">
+
+                    <div class="Detail_Point_Title">
+                        <div class="Detail_Point_Title_Image"><img src="./assets/point.png"></div>
+                        <p>不快感のない動作</p>
+                    </div>
+
+                    <div class="Detail_Point_Body">
+                        <p>
+                            マリオのようなふわっとしたジャンプを意識して制作。<br>
+                            敵を倒した際にふわっと浮くところはかわいくてお気に入り。<br>
+                            壁ジャンプの制作では際に壁に引っかかったり判定がうまくいかなかったりどの程度飛ぶか等調整が大変だった記憶。
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="Detail_Point">
+
+                    <div class="Detail_Point_Title">
+                        <div class="Detail_Point_Title_Image"><img src="./assets/point.png"></div>
+                        <p>自作モデル・テクスチャー</p>
+                    </div>
+
+                    <div class="Detail_Point_Body">
+                        <p>
+                            ゲームで使用しているモデルとテクスチャーの９割以上は自分で制作したもの。<br>
+                            モデルはMAYA、テクスチャーはMediBang Paint Proで制作。
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
