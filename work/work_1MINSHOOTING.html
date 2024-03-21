@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work</title>
-    <link rel="stylesheet" href="work.css">
+    
+    <!-- ▼CSS 1 -->
+    <link href="work_phone.css" rel="stylesheet" type="text/css" media="(max-width: 599px)" >
+    <!-- ▼CSS 2 -->
+    <link href="work_pc.css" rel="stylesheet" type="text/css" media="(min-width: 600px)">
+
     <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 </head>
 
@@ -13,54 +18,95 @@
     <div id="particles-js"></div>
     <div id="wrapper"></div>
 
-    <div claass="Contents">
-        <div class="Images">
-            <img class="Image" src="./assets/1MINSSHOOTING/title.png">
-        </div>
-
-        <div class="Report_Container">
-            <div class="Report_Content">
-                <div class="Report">
-                    <div class="Report_Header">1MIN SHOOTING</div>
-                    <div class="Report_Body">
-                        <p>
-                            学内コンテストに向けて制作を開始。<br>
-                            プログラミングや言語に対する理解が全くなかったのでサイトで調べたものを参考に制作。<br>
-                            制作をしながらプログラミングについて学習することで基礎的な知識を身に着けることに成功。<br>
-                            この1カ月がなかったらC言語は習得できたかったと思う。<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="Report_Content">
-                <div class="Report">
-                    <div class="Report_Header">概要</div>
-                    <div class="Report_Body">
-                        <p>
-                            制作日：2021/08/30<br>
-                            制作期間：1カ月程<br>
-                            ジャンル：シューティング<br>
-                            制作人数：1名<br>
-                            2021年10月　HAL３校合同コンテスト　独創力賞受賞
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="Report">
-                    <div class="Report_Header">使用言語・ツール</div>
-                    <div class="Report_Body">
-                        <p>
-                            開発環境：Unity / C#<br>
-                            使用ツール：MediBang Peint Pro
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
+    <!---------------------------------------------------------------->
+    <!--                           画像                             -->
+    <!---------------------------------------------------------------->
+    <div class="Images">
+        <img class="Image" src="./assets/1MINSSHOOTING/title.png">
     </div>
+
+    <!---------------------------------------------------------------->
+    <!--                           概要                             -->
+    <!---------------------------------------------------------------->
+    <div class="Report_Summaries">
+        <div class="Summary">
+            <div class="Summary_Header">概要</div>
+            <div class="Summary_Body">
+                <p>
+                    制作日：2021/08/30<br>
+                    制作期間：1カ月程<br>
+                    ジャンル：シューティング<br>
+                    制作人数：1名<br>
+                    2021年10月　HAL３校合同コンテスト　独創力賞受賞
+                </p>
+            </div>
+        </div>
+
+        <div class="Summary">
+            <div class="Summary_Header">使用言語・ツール</div>
+            <div class="Summary_Body">
+                <p>
+                    開発環境：Unity / C#<br>
+                    使用ツール：MediBang Peint Pro
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------->
+    <!--                           詳細                             -->
+    <!---------------------------------------------------------------->
+    <div class="Report_Detail">
+        <div class="Detail">
+
+            <div class="Detail_Header">詳細</div>
+
+            <div class="Detail_Body">
+                <p>
+                    学内コンテストに向けて制作を開始。<br>
+                    プログラミングや言語に対する理解が全くなかったのでサイトで調べた手順書を参考に制作。<br>
+                    制作をしながらプログラミングについて学習することで基礎的な知識を身に着けることに成功。<br>
+                    この1カ月がなかったらC言語は習得できたかったと思う。<br>
+                </p>
+
+                <div class="Detail_Point">
+
+                    <div class="Detail_Point_Title">
+                        <div class="Detail_Point_Title_Image"><img src="./assets/point.png"></div>
+                        <p>初めてのゲーム制作</p>
+                    </div>
+
+                    <div class="Detail_Point_Body">
+                        <p>
+                            当時は全くプログラミングができなかったので、Unity内の操作だけでなくプログラミングまで手順が乗っているものを参考に制作。<br>
+                            Unityの基礎を理解するとともにプログラミングの基礎的な概念まで理解することに成功した。<br>
+                            この経験からとりあえず手を動かしてみることの大切さを知った。
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="Detail_Point">
+
+                    <div class="Detail_Point_Title">
+                        <div class="Detail_Point_Title_Image"><img src="./assets/point.png"></div>
+                        <p>自作テクスチャー</p>
+                    </div>
+
+                    <div class="Detail_Point_Body">
+                        <p>
+                            ゲームで使用しているテクスチャーの９割以上は自分で制作したもの。<br>
+                            制作にはMediBang Paint Proを使用。
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
     
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./work.js"></script>
