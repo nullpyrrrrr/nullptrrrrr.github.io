@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="works_pc.css">
+
+    <!-- ▼CSS 1 -->
+    <link href="works_phone.css" rel="stylesheet" type="text/css" media="(max-width: 599px)" >
+    <!-- ▼CSS 2 -->
+    <link href="works_pc.css" rel="stylesheet" type="text/css" media="(min-width: 600px)">
 
     <!--揺れる文字-->
     <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 
     <!--ポップアップ-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
-
-    <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 
 <header>
@@ -29,6 +31,16 @@
             <a class="Header_Navigation_Content" href="./works.html">WORKS</a>
         </ul>
 
+        <div class="Header_Openbtn"><span></span><span></span></div>
+
+    </div>
+
+    <div class="Header_Menu">
+        <ul>
+            <li><a href="./top.html">HOME</a></li>
+            <li><a href="./profile.html">PROFILE</a></li>
+            <li><a href="./works.html">WORKS</a></li>
+        </ul>
     </div>
 </header>
 
@@ -139,8 +151,9 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <!--幾何学模様-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> <!--ハンバーガーメニュー-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> <!--ポップアップ-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
     <script src="works.js"></script>
 </body>
