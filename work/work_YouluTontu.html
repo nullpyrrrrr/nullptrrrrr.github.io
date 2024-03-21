@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work</title>
-    <link rel="stylesheet" href="work.css">
+
+    <!-- ▼CSS 1 -->
+    <link href="work_phone.css" rel="stylesheet" type="text/css" media="(max-width: 599px)" >
+    <!-- ▼CSS 2 -->
+    <link href="work_pc.css" rel="stylesheet" type="text/css" media="(min-width: 600px)">
+
     <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 </head>
 
@@ -13,55 +18,95 @@
     <div id="particles-js"></div>
     <div id="wrapper"></div>
     
-    <div claass="Contents">
-        <div class="Images">
+    <!---------------------------------------------------------------->
+    <!--                           画像                             -->
+    <!---------------------------------------------------------------->
+    <div class="Images">
             <img class="Image" src="./assets/ヨウル・トントゥ/title.png">
+    </div>
+
+    <!---------------------------------------------------------------->
+    <!--                           概要                             -->
+    <!---------------------------------------------------------------->
+    <div class="Report_Summaries">
+        <div class="Summary">
+            <div class="Summary_Header">概要</div>
+            <div class="Summary_Body">
+                <p>
+                    制作日：2023/02/20<br>
+                    制作期間：3カ月程<br>
+                    ジャンル：ジャンプアクション<br>
+                    制作人数：8名<br>
+                </p>
+            </div>
         </div>
 
-        <div class="Report_Container">
-            <div class="Report_Content">
-                <div class="Report">
-                    <div class="Report_Header">ヨウル・トントゥ</div>
-                    <div class="Report_Body">
-                        <p>
-                            学内コンテストに向けて制作を開始。<br>
-                            初めてのチーム制作であらゆる工程で作業が難航。<br>
-                            苦手分野である発案・企画から主体的に行動。<br>
-                            プログラムはチーム内の実力差が大きかったため全体の9割を担当。<br>
-                            データ入力やレベルデザインの作業を割り振ったがもう少し違うやり方があったのではないかと反省。<br>
-                        </p>
-                    </div>
-                </div>
+        <div class="Summary">
+            <div class="Summary_Header">使用言語・ツール</div>
+            <div class="Summary_Body">
+                <p>
+                    開発環境：DirectX11 / C++<br>
+                    使用ツール：MAYA、MediBang Peint Pro
+                </p>
             </div>
-            
-            <div class="Report_Content">
-                <div class="Report">
-                    <div class="Report_Header">概要</div>
-                    <div class="Report_Body">
-                        <p>
-                            制作日：2023/02/20<br>
-                            制作期間：3カ月程<br>
-                            ジャンル：ジャンプアクション<br>
-                            制作人数：8名<br>
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="Report">
-                    <div class="Report_Header">使用言語・ツール</div>
-                    <div class="Report_Body">
-                        <p>
-                            開発環境：DirectX11 / C++<br>
-                            使用ツール：MAYA、MediBang Peint Pro
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
         </div>
-        
     </div>
-    
+
+    <!---------------------------------------------------------------->
+    <!--                           詳細                             -->
+    <!---------------------------------------------------------------->
+    <div class="Report_Detail">
+        <div class="Detail">
+
+            <div class="Detail_Header">詳細</div>
+
+            <div class="Detail_Body">
+                <p>
+                    授業の一環で学内コンテストに向けて制作を開始。<br>
+                    初めてのチーム制作であらゆる工程で作業が難航。<br>
+                    苦手分野である発案・企画から主体的に行動。<br>
+                    プログラムはチーム内の実力差が大きかったため全体の9割を担当。<br>
+                    データ入力やレベルデザインの作業を割り振ったがもう少し違うやり方があったのではないかと反省。<br>
+                </p>
+
+                <div class="Detail_Point">
+
+                    <div class="Detail_Point_Title">
+                        <div class="Detail_Point_Title_Image"><img src="./assets/point.png"></div>
+                        <p>数多くのエネミー・ギミック</p>
+                    </div>
+
+                    <div class="Detail_Point_Body">
+                        <p>
+                            メンバーの意見をできる限り反映して制作したエネミー・ギミック。<br>
+                            特にクモの範囲内に入ったら出現 → 振り子という処理に力を入れた記憶。<br>
+                            今思うと数を絞ってクオリティを上げたほうが得策だったのでは…？
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="Detail_Point">
+
+                    <div class="Detail_Point_Title">
+                        <div class="Detail_Point_Title_Image"><img src="./assets/point.png"></div>
+                        <p>日程・進捗管理</p>
+                    </div>
+
+                    <div class="Detail_Point_Body">
+                        <p>
+                            Excelでガントチャートを作成し、日程・進捗管理を徹底。<br>
+                            こまめに確認し、メンバーに進捗確認をするなどコミュニケーションを取り、ほぼ日程通りにプロジェクトを進行させた。
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./work.js"></script>
 </body>
