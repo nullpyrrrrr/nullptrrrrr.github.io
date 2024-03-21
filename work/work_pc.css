@@ -1,0 +1,107 @@
+#particles-js{ 
+	position:fixed;/*描画固定*/
+	z-index:-3;/*描画を一番下に*/
+	width: 100%;
+	height: 100%;
+	background-color:black;/*背景色*/
+}
+
+#wrapper{
+	position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+	z-index: -2;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+	width:100%;
+	height: 100%;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+
+/*=================================*/
+/*Images*/
+/*=================================*/
+.Images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vw;
+    background-color: #ffffff33;
+}
+
+.Image{
+    width: 60%;
+    height: 30vw;
+}
+
+/*=================================*/
+/*Summary*/
+/*=================================*/
+.Report_Summaries{
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 100px);
+    max-width: 900px;
+    margin: 2vh auto 10vh auto;
+}
+
+.Summary{
+    padding: 0 3%;
+    flex-grow: 1;
+}
+
+.Summary_Header{
+    border-bottom: solid 1px;
+}
+
+
+/*=================================*/
+/*Report*/
+/*=================================*/
+.Report_Detail{
+    width: calc(100% - 100px);
+    max-width: 900px;
+    margin: 2vh auto 10vh auto;
+}
+
+.Detail{
+    padding: 0 3%;
+}
+
+.Detail_Header{
+    border-bottom: solid 1px;
+}
+
+.Detail_Body{
+    margin-bottom: 5vh;
+}
+
+.Detail_Point_Title{
+    display: flex;
+}
+
+.Detail_Point_Title p{
+    margin: auto 0;
+}
+
+.Detail_Point_Title_Image{
+    width: 30px;
+    height: 30px;
+}
+
+.Detail_Point_Title_Image img{
+    width: 100%;
+    height: 100%;
+}
+
+.Detail_Point_Body{
+    margin: 0 0 20px 30px;
+}
+
+.Detail_Point_Body p{
+    margin: 0;
+    font-size: 0.9rem;
+}
