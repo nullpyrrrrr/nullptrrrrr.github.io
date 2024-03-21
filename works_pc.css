@@ -130,6 +130,9 @@
       }
 }
 
+/*=================================*/
+/*幾何学模様*/
+/*=================================*/
 #particles-js{ 
 	position:fixed;/*描画固定*/
 	z-index:-3;/*描画を一番下に*/
@@ -209,6 +212,13 @@ header{
 
 .Header_Navigation_Content{
     margin: auto 0 auto 30px;
+}
+
+/*メニュー*/
+.Header_Menu{
+  position: absolute;
+  overflow-x: hidden;
+  height: 0;
 }
 
 /*=================================*/
