@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work</title>
-    <link rel="stylesheet" href="work.css">
+    
+    <!-- ▼CSS 1 -->
+    <link href="work_phone.css" rel="stylesheet" type="text/css" media="(max-width: 599px)" >
+    <!-- ▼CSS 2 -->
+    <link href="work_pc.css" rel="stylesheet" type="text/css" media="(min-width: 600px)">
+
     <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 </head>
 
@@ -13,51 +18,76 @@
     <div id="particles-js"></div>
     <div id="wrapper"></div>
     
-    <div claass="Contents">
-        <div class="Images">
-            <img class="Image" src="./assets/Portfolio/title.png">
-        </div>
-
-        <div class="Report_Container">
-            <div class="Report_Content">
-                <div class="Report">
-                    <div class="Report_Header">Portfolio</div>
-                    <div class="Report_Body">
-                        <p>
-                            このwebページ。<br>
-                            web制作に興味があり、ちょうどポートフォリオが必要になったため作成を開始。<br>
-                            以前から学習はしていたが、人に見せれるものを作ったのは今回が初めて。<br>
-                            制作中に技術不足を痛感することが度々あったのでこれからも制作を通して学んでいきたい。<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="Report_Content">
-                <div class="Report">
-                    <div class="Report_Header">概要</div>
-                    <div class="Report_Body">
-                        <p>
-                            制作日：2024/03/03<br>
-                            制作期間：3日<br>
-                            制作人数：1名<br>
-                        </p>
-                    </div>
-                </div>
-    
-                <div class="Report">
-                    <div class="Report_Header">使用言語・ツール</div>
-                    <div class="Report_Body">
-                        <p>
-                            開発言語：HTML/CSS、JavaScript<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
+    <!---------------------------------------------------------------->
+    <!--                           画像                             -->
+    <!---------------------------------------------------------------->
+    <div class="Images">
+        <img class="Image" src="./assets/Portfolio/title.png">
     </div>
+
+    <!---------------------------------------------------------------->
+    <!--                           概要                             -->
+    <!---------------------------------------------------------------->
+    <div class="Report_Summaries">
+        <div class="Summary">
+            <div class="Summary_Header">概要</div>
+            <div class="Summary_Body">
+                <p>
+                    制作日：2024/03/03<br>
+                    制作期間：7日<br>
+                    制作人数：1名
+                </p>
+            </div>
+        </div>
+
+        <div class="Summary">
+            <div class="Summary_Header">使用言語・ツール</div>
+            <div class="Summary_Body">
+                <p>
+                    開発言語：HTML/CSS、JavaScript
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------->
+    <!--                           詳細                             -->
+    <!---------------------------------------------------------------->
+    <div class="Report_Detail">
+        <div class="Detail">
+
+            <div class="Detail_Header">詳細</div>
+
+            <div class="Detail_Body">
+                <p>
+                    このwebページ。<br>
+                    web制作に興味があり、ちょうどポートフォリオが必要になったため作成を開始。<br>
+                    以前から学習はしていたが、人に見せれるものを作ったのは今回が初めて。<br>
+                    制作中に技術不足を痛感することが度々あったのでこれからも制作を通して学んでいきたい。<br>
+                </p>
+
+                <div class="Detail_Point">
+
+                    <div class="Detail_Point_Title">
+                        <div class="Detail_Point_Title_Image"><img src="./assets/point.png"></div>
+                        <p>レスポンシブ対応</p>
+                    </div>
+
+                    <div class="Detail_Point_Body">
+                        <p>
+                            PC版とスマホ版のsccを用意してレスポンシブ対応させた。<br>
+                            初めてのweb制作で戸惑うこともあったが、ひとまず満足のいくものが作れた。<br>
+                            今後もこのページは都度更新していく予定。
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
     
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./work.js"></script>
