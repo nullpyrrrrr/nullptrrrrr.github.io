@@ -1,0 +1,470 @@
+@keyframes noise-anim{
+    0% {
+        clip: rect(77px, 9999px, 6px, 0);
+      }
+      5% {
+        clip: rect(65px, 9999px, 70px, 0);
+      }
+      10% {
+        clip: rect(82px, 9999px, 82px, 0);
+      }
+      15% {
+        clip: rect(32px, 9999px, 35px, 0);
+      }
+      20% {
+        clip: rect(31px, 9999px, 49px, 0);
+      }
+      25% {
+        clip: rect(18px, 9999px, 46px, 0);
+      }
+      30% {
+        clip: rect(94px, 9999px, 64px, 0);
+      }
+      35% {
+        clip: rect(69px, 9999px, 31px, 0);
+      }
+      40% {
+        clip: rect(6px, 9999px, 72px, 0);
+      }
+      45% {
+        clip: rect(25px, 9999px, 35px, 0);
+      }
+      50% {
+        clip: rect(82px, 9999px, 26px, 0);
+      }
+      55% {
+        clip: rect(7px, 9999px, 92px, 0);
+      }
+      60% {
+        clip: rect(54px, 9999px, 30px, 0);
+      }
+      65% {
+        clip: rect(86px, 9999px, 90px, 0);
+      }
+      70% {
+        clip: rect(38px, 9999px, 65px, 0);
+      }
+      75% {
+        clip: rect(41px, 9999px, 66px, 0);
+      }
+      80% {
+        clip: rect(31px, 9999px, 37px, 0);
+      }
+      85% {
+        clip: rect(8px, 9999px, 12px, 0);
+      }
+      90% {
+        clip: rect(50px, 9999px, 69px, 0);
+      }
+      95% {
+        clip: rect(7px, 9999px, 42px, 0);
+      }
+      100% {
+        clip: rect(14px, 9999px, 57px, 0);
+      }
+}
+
+@keyframes noise-anim-2{
+    0% {
+        clip: rect(18px, 9999px, 13px, 0);
+      }
+      5% {
+        clip: rect(74px, 9999px, 51px, 0);
+      }
+      10% {
+        clip: rect(33px, 9999px, 65px, 0);
+      }
+      15% {
+        clip: rect(64px, 9999px, 66px, 0);
+      }
+      20% {
+        clip: rect(75px, 9999px, 6px, 0);
+      }
+      25% {
+        clip: rect(40px, 9999px, 49px, 0);
+      }
+      30% {
+        clip: rect(71px, 9999px, 1px, 0);
+      }
+      35% {
+        clip: rect(42px, 9999px, 73px, 0);
+      }
+      40% {
+        clip: rect(92px, 9999px, 57px, 0);
+      }
+      45% {
+        clip: rect(4px, 9999px, 33px, 0);
+      }
+      50% {
+        clip: rect(4px, 9999px, 34px, 0);
+      }
+      55% {
+        clip: rect(49px, 9999px, 25px, 0);
+      }
+      60% {
+        clip: rect(24px, 9999px, 44px, 0);
+      }
+      65% {
+        clip: rect(31px, 9999px, 99px, 0);
+      }
+      70% {
+        clip: rect(54px, 9999px, 83px, 0);
+      }
+      75% {
+        clip: rect(57px, 9999px, 97px, 0);
+      }
+      80% {
+        clip: rect(3px, 9999px, 15px, 0);
+      }
+      85% {
+        clip: rect(84px, 9999px, 34px, 0);
+      }
+      90% {
+        clip: rect(100px, 9999px, 88px, 0);
+      }
+      95% {
+        clip: rect(91px, 9999px, 59px, 0);
+      }
+      100% {
+        clip: rect(10px, 9999px, 87px, 0);
+      }
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+/*=================================*/
+/*幾何学模様*/
+/*=================================*/
+#particles-js{ 
+	position:fixed;/*描画固定*/
+	z-index:-3;/*描画を一番下に*/
+	width: 100%;
+	height: 100%;
+	background-color:black;/*背景色*/
+}
+
+#wrapper{
+	position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+	z-index: -2;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+	width:100%;
+	height: 100%;
+}
+
+
+/*=================================*/
+/*header*/
+/*=================================*/
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.856);
+    font-weight: bold;
+    z-index: 10;
+}
+
+.Header_Content{
+    display: flex;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: calc(100% - 10%);
+}
+
+.Header_Logo{
+    display: flex;
+}
+
+.Header_Logo img{
+    width: 45px;
+}
+
+.Header_Logo p{
+    font-size: 30px;
+    color: white;
+    float: left;
+    margin: auto 0;
+}
+
+.Header_Navigation{
+  display: none;
+  color: white;
+  list-style: none;
+  margin: 0 0 0 auto;
+}
+
+.Header_Navigation_Content{
+    margin: auto 0 auto 30px;
+}
+
+/*ハンバーガーメニュー*/
+.Header_Openbtn{
+	position: relative;
+  margin-left: auto;
+  width: 45px;
+  height:45px;
+	cursor: pointer;
+}
+	
+/*ボタン内側*/
+.Header_Openbtn span{
+  display: inline-block;
+  transition: all .4s;/*アニメーションの設定*/
+  position: absolute;
+  right: 18%;
+  height: 3px;
+	background:#9af3ff;
+}
+
+
+.Header_Openbtn span:nth-of-type(1) {
+	top:35%;	
+  width: 64%;
+}
+
+.Header_Openbtn span:nth-of-type(2) {
+	top:55%;
+  width:45%;
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+.Header_Openbtn.active span:nth-of-type(1) {
+  top: 30%;
+  right: 15%;
+  transform: translateY(6px) rotate(-45deg);
+  width: 64%;
+}
+
+.Header_Openbtn.active span:nth-of-type(2) {
+  top: 60%;
+  right: 15%;
+  transform: translateY(-6px) rotate(45deg);
+  width: 64%;
+}
+
+/*メニュー*/
+.Header_Menu{
+  background: rgba(0, 0, 0, 0.856);
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  overflow-x: hidden;
+  text-align: center;
+  width: 100%;
+  height: 0; /* ←100%から 0 に変更 */
+  transition: .5s;
+}
+
+.Header_Menu ul{
+  padding: 0;
+}
+
+.Header_Menu li{
+  list-style:none;
+  padding: 2vh 0;
+  font-size: 3rem;
+}
+
+.Header_Menu.active{
+  height: 100vh;
+}
+
+/*=================================*/
+/*body*/
+/*=================================*/
+body{
+    background-color: black;
+    margin: 0;
+    color: white;
+    overflow-x: hidden;
+}
+
+/*=================================*/
+/*Page_Header*/
+/*=================================*/
+.Page_Header{
+  position: relative;
+    width: calc(100% - 5%);
+    margin: 0 auto;
+    height: 40px;
+    z-index: -1;
+}
+
+.Is_BackAnimation{
+    color:rgb(30, 48, 51);
+    margin: 0;
+}
+
+.Is_BackAnimation::after{
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: rgb(35, 56, 59);
+    background: black;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+.Is_BackAnimation::before{
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 1px 0 blue;
+    top: 0;
+    color: rgb(35, 56, 59);
+    background: black;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+/*=================================*/
+/*Profile_Article*/
+/*=================================*/
+.Profile_Article{
+    width: calc(100% - 15%);
+    margin: 0 auto;
+}
+
+/*=================================*/
+/*Profile_Article_Header*/
+/*=================================*/
+.Article_Header{
+    margin-bottom: 5vh;
+}
+
+.Article_Header_Media{
+    background-color: rgba(67, 163, 180, 0.904);
+    clip-path: polygon(0 0, 85% 0, 100% 25%, 100% 100%, 15% 100%, 0 75%);
+}
+
+.Article_Header_Class{
+    font-size: 0.95rem;
+    margin: 0.5vh 0 0 0;
+}
+
+.Article_Header_Name{
+    font-size: 2rem;
+    margin: 1vh 0 0 0;
+}
+
+.Article_Header_NamePseudonym{
+    margin: 0;
+    font-size: 0.95rem;
+    color: grey;
+}
+
+/*=================================*/
+/*Profile_Article_Body_Item*/
+/*=================================*/
+.Article_Body_Item_Top{
+  margin-top: 3vh;
+}
+
+.Article_Body_Item{
+    margin-top: 15vh;
+}
+
+.Item_Header{
+    position: relative;
+    height: 8vh;
+}
+
+.Item_Header_Backgrownd{
+    position: absolute;
+    z-index: -1;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(36, 36, 36);
+}
+
+.Item_Header_Title{
+    position: absolute;
+    top: 2.5vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#Profile_Skill{
+    margin-top: 150px;
+}
+
+.MySkill_Container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.MySkill{
+    width: 98%;
+    padding: 0 1% 3vh 1%;
+}
+
+.MySkill p{
+    margin: 0;
+}
+
+.MySkill_Header{
+  display: flex;
+  height: 8vh;
+  margin-bottom: 10px;
+}
+
+.MySkill_Icon{
+    width: 8vh;
+    margin-right: 1%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.MySkill_Header_Detail{
+    width: 75%;
+    height: 8vh;
+}
+
+.MySkill_Header_Detail p{
+  font-size: 0.7rem;
+  padding: 0 12px;
+}
+
+.skill-bar {
+    width: 60%;
+    padding: 0 12px;
+    border-bottom: solid white;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 1rem;
+      color: white;
+      width: 45%;
+      margin: 0;
+      padding: 0;
+      }
+
+    .dots {
+      width: 45%;
+      display: flex;
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 5px;
+      background-color: #3a3a3a;
+      margin-left: 4%;
+      }
+
+    .green {
+       background-color: rgba(114, 213, 230, 0.904);
+      }
+    }
+  }
